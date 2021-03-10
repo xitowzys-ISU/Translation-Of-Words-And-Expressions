@@ -9,11 +9,6 @@ class Translator
         $this->dictWords = $dictWords;
     }
 
-    public function changeLang($lang)
-    {
-        $this->selectedLang = $lang;
-    }
-
     public function translate($sourceLang, $translateLang, $text)
     {
         if (in_array($text, $this->dictWords[$sourceLang])) {
