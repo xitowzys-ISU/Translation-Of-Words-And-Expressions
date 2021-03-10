@@ -8,7 +8,6 @@ class ControllerTranslator
     {
         $dict = require 'config/dictWords.php';
 
-        $this->view = new View();
         $this->model = new Translator($dict);
     }
 
